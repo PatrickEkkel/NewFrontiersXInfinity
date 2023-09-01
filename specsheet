@@ -1,13 +1,64 @@
 
 
-MSX2 grahpics are acceptable.  
-
+MSX2+ grahpics are acceptable.  
 MSX-C graphics seems viable (https://github.com/aoineko-fr/MSXgl) 
+
+SNES graphics seems about right. (however this system has the lowest priority)
 
 modular graphics engine that allows easy adaptation for various hardware
 
 
 C-Programming language is the language of choice.. Sort of compatible with MSX 
+
+
+Systems that we want to support 
+
+SNES
+MSX2+
+PC (Dos/Windows/32bit/64bit)
+Gameboy Advance
+
+
+The original gameboy won't be supported because the hardware is too limiting and differs to much from the other system. We want to program the project in C and doing C on a gameboy is possible but limiting. 
+
+https://gbdev.io/guides/tools.html#wla-dx-with-asm 
+
+Priority for implementation 
+
+1. PC
+2. MSX2+
+3. SNES
+4. Gameboy Advance
+5. Gameboy (when possible) 
+
+tiles will be 8x8 pixels and sprites will be max 16x16 pixels normal characters will be 8x16 probably
+
+the game will be top down with a fixed orthagonal aspect ratio (like SD snatcher)
+
+The scope of the game will be earth and space, with a focus on turn based combat when dealing with 1v1 or 4v1 taking inspiration from SD snatcher in that regard. Maybe also take some cues from Triagle strategy, because the combat will be mostly gun based with melee elements. 
+
+Space travel should also be modelled and it should be possible to fly around in a war ship and also engage in combat. (turn based of course)
+
+
+TODO 
+
+1. Lore building
+	- Look an 'The Expanse for inspiration'
+	- Star Trek
+	- Battlestar Galatica
+	- Halo
+2. Write the setting
+3. Write the main story
+
+
+
+4. Write basic engine features
+	1. Move around a character in a room 
+	2. Design menustructure (take queues from existing games)
+
+
+
+
 
 
 
