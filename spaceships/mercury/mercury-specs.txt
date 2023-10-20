@@ -1,0 +1,47 @@
+
+1 pixel is 2 meter. 1 square in acesprite is 16pixels
+
+standard deck height is 4 pixels (8 meter) 1 pixel bulkhead/internals 2pixels usable height (walkways, ducts/vents/ceiling") 1pixel buffer/padding
+
+
+orange: missile tubes
+
+
+Mercury class light frigate
+
+Length 352 meter
+width 128 meter
+height 54 meter
+
+decks: 14 
+standard landing bays: 8
+
+Offensive capability: 
+
+missile tubes: 10 
+missile stock: 300 of various types
+
+railguns:
+1 internal frontal 85 kilo ton multipurpose slow reloading heavy railgun
+spacecraft compliment: 
+4 longsword heavy fighters, 2 scout craft/2 utility craft
+
+fighter quicklaunch capability: none
+
+
+Defensive capability: 
+
+Anti missile PDC class 1: 
+portboard: 2
+starboard: 2
+dorsal: 3
+ventral: 3
+
+anti missile chaff 
+
+
+marines compliment: 55
+
+
+
+
