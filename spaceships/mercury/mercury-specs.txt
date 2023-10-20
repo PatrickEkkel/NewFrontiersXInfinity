@@ -28,7 +28,6 @@ spacecraft compliment:
 
 fighter quicklaunch capability: none
 
-
 Defensive capability: 
 
 Anti missile PDC class 1: 
@@ -37,11 +36,34 @@ starboard: 2
 dorsal: 3
 ventral: 3
 
-anti missile chaff 
+anti missile chaff: 40 salvos
+
+
+FTL Drive: Class IV integrated FTL (Nikola Corp)
+	- Slow spinup
+	- Short range (1.3 LY)
+	- Not very robust
 
 
 marines compliment: 55
 
 
 
+
+
+
+
+legend: 
+
+purple: engineering
+green: crew quarters
+light-blue: crew/showers/toilets/rec-room
+red: ordenance storage
+dark-blue: aux-storage
+yellow: Bridge
+brown: tech-room (can be anything, life-support, sensors, computer-room, environment, thrust control)
+grey: damage control
+turqoise: mission specfic 
+black: bulkhead
+light-grey: non-specific, aux-storage/empty space
 
