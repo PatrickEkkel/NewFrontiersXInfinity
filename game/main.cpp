@@ -1,21 +1,24 @@
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
 #include <stdbool.h>
 
 int main()
 {
     al_init();
     al_install_keyboard();
+    al_init_ttf_addon();
 
     ALLEGRO_TIMER* timer = al_create_timer(1.0 / 30.0);
     ALLEGRO_EVENT_QUEUE* queue = al_create_event_queue();
-    ALLEGRO_DISPLAY* disp = al_create_display(320, 200);
-    ALLEGRO_FONT* font = al_create_builtin_font();
+    ALLEGRO_DISPLAY* disp = al_create_display(640, 480);
+   // ALLEGRO_FONT* font = al_create_builtin_font();
 
     al_register_event_source(queue, al_get_keyboard_event_source());
     al_register_event_source(queue, al_get_display_event_source(disp));
     al_register_event_source(queue, al_get_timer_event_source(timer));
 
+    ALLEGRO_FONT* font = al_load_ttf_font("fonts/slkscre.ttf",40,NULL);
     bool redraw = true;
     ALLEGRO_EVENT event;
 
@@ -32,7 +35,7 @@ int main()
         if(redraw && al_is_event_queue_empty(queue))
         {
             al_clear_to_color(al_map_rgb(0, 0, 0));
-            al_draw_text(font, al_map_rgb(255, 255, 255), 0, 0, 0, "Hello world!");
+            al_draw_text(font, al_map_rgb(102, 51, 0), 0, 0, 0, "Hello world!");
             al_flip_display();
 
             redraw = false;
