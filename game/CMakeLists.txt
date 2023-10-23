@@ -5,7 +5,16 @@ LINK_DIRECTORIES(  /usr/lib/x86_64-linux-gnu)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(game main.cpp)
+add_executable(game main.cpp
+        menu/BottomMenu.cpp
+        menu/BottomMenu.h
+        display/Display.cpp
+        display/Display.h
+        engine/GameContext.cpp
+        engine/GameContext.h
+        menu/MenuBox.cpp
+        menu/MenuBox.h
+)
 TARGET_LINK_LIBRARIES(game
         allegro_acodec
         allegro_audio
