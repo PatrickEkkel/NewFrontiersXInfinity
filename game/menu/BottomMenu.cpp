@@ -26,7 +26,89 @@ void BottomMenu::setBottomMenuHeight(float menuHeight) {
 
     MenuBox * menuBox = new MenuBox(this->gameContext,150);
 
-    menuBox->addMenuItem("blurpking!");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("test");
 
 
     Display* display = this->gameContext->getDisplay();

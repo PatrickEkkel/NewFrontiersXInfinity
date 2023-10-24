@@ -6,7 +6,6 @@
 
 #include <allegro_primitives.h>
 #include <allegro_font.h>
-#include <allegro_ttf.h>
 #include "MenuBox.h"
 #include "../engine/GameContext.h"
 
@@ -18,7 +17,7 @@ MenuBox::MenuBox(GameContext *gameContext, float menuHeight) {
     float height = display->getHeight();
 
     this->x1 = 5;
-    this->y1 = height-menuHeight-menuHeight;;
+    this->y1 = height-menuHeight-menuHeight;
 
     this->x2 = width-5;
     this->y2 = height-5;
@@ -32,13 +31,15 @@ void MenuBox::setGameContext(GameContext *gameContext) {
 }
 
 void MenuBox::addMenuItem(char *text) {
-    int size = this->menuItems.size();
-    int xOffset = this->x1;
-    int yOffset = this->y1 + 10;
-    if(size != 0) {
-        xOffset = this->x1 * size;
+    float xOffset = x1 + 5;
+    float yOffset = y1 - 10;
+    if(row > 13) {
+        this->col++;
+        this->row = 0;
     }
-
+    xOffset = xOffset + (col*200);
+    yOffset = yOffset + (20 * (row+1));
     al_draw_text(this->gameContext->getFont(), al_map_rgb(255, 255, 255), xOffset, yOffset, 0, text);
     this->menuItems.push_back(text);
+    this->row++;
 }

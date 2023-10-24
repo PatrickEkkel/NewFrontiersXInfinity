@@ -15,6 +15,9 @@ private:
     list<char*> menuItems;
     GameContext * gameContext;
 
+    int col = 0;
+    int row = 0;
+
     float x1 = 0;
     float y1 = 0;
 
