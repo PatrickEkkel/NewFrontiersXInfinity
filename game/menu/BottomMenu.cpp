@@ -24,7 +24,7 @@ void BottomMenu::setContext(GameContext *gamecontext) {
 
 void BottomMenu::setBottomMenuHeight(float menuHeight) {
 
-    MenuBox * menuBox = new MenuBox(this->gameContext,150);
+    MenuBox * menuBox = new MenuBox(this->gameContext,100);
 
     menuBox->addMenuItem("test");
     menuBox->addMenuItem("test");
@@ -48,7 +48,7 @@ void BottomMenu::setBottomMenuHeight(float menuHeight) {
     menuBox->addMenuItem("test");
     menuBox->addMenuItem("test");
     menuBox->addMenuItem("test");
-    menuBox->addMenuItem("test");
+    menuBox->addMenuItem("cunt");
 
     menuBox->addMenuItem("test");
     menuBox->addMenuItem("test");

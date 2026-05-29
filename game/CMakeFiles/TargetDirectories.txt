@@ -1,0 +1,3 @@
+/home/ekkel/Git/NewFrontiersXInfinity/game/CMakeFiles/game.dir
+/home/ekkel/Git/NewFrontiersXInfinity/game/CMakeFiles/edit_cache.dir
+/home/ekkel/Git/NewFrontiersXInfinity/game/CMakeFiles/rebuild_cache.dir

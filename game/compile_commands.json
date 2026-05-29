@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",
+  "command": "/usr/bin/c++  -I/usr/include/allegro5 -g -fdiagnostics-color=always -o CMakeFiles/game.dir/main.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/main.cpp",
+  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/main.cpp",
+  "output": "CMakeFiles/game.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",
+  "command": "/usr/bin/c++  -I/usr/include/allegro5 -g -fdiagnostics-color=always -o CMakeFiles/game.dir/menu/BottomMenu.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/menu/BottomMenu.cpp",
+  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/menu/BottomMenu.cpp",
+  "output": "CMakeFiles/game.dir/menu/BottomMenu.cpp.o"
+},
+{
+  "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",
+  "command": "/usr/bin/c++  -I/usr/include/allegro5 -g -fdiagnostics-color=always -o CMakeFiles/game.dir/display/Display.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/display/Display.cpp",
+  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/display/Display.cpp",
+  "output": "CMakeFiles/game.dir/display/Display.cpp.o"
+},
+{
+  "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",
+  "command": "/usr/bin/c++  -I/usr/include/allegro5 -g -fdiagnostics-color=always -o CMakeFiles/game.dir/engine/GameContext.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/engine/GameContext.cpp",
+  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/engine/GameContext.cpp",
+  "output": "CMakeFiles/game.dir/engine/GameContext.cpp.o"
+},
+{
+  "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",
+  "command": "/usr/bin/c++  -I/usr/include/allegro5 -g -fdiagnostics-color=always -o CMakeFiles/game.dir/menu/MenuBox.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/menu/MenuBox.cpp",
+  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/menu/MenuBox.cpp",
+  "output": "CMakeFiles/game.dir/menu/MenuBox.cpp.o"
+}
+]

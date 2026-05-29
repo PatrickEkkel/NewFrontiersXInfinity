@@ -28,7 +28,7 @@ void GameContext::startMainLoop() {
     ALLEGRO_EVENT event;
     ALLEGRO_FONT* font = al_load_ttf_font("fonts/slkscre.ttf",40,0);
     bool redraw = true;
-    while(1)
+    while(true)
     {
         al_wait_for_event(queue, &event);
 
@@ -37,11 +37,15 @@ void GameContext::startMainLoop() {
         else if((event.type == ALLEGRO_EVENT_KEY_DOWN) || (event.type == ALLEGRO_EVENT_DISPLAY_CLOSE))
             break;
 
+
+        // TODO: 
+        // load an image (from a tileset and display it in the topleft corner of the screen
+
         if(redraw && al_is_event_queue_empty(queue))
         {
             al_clear_to_color(al_map_rgb(0, 0, 0));
             al_draw_text(font, al_map_rgb(102, 51, 0), 0, 0, 0, "Hello world!");
-            this->menu->draw();
+            //this->menu->draw();
             al_flip_display();
             redraw = false;
         }
