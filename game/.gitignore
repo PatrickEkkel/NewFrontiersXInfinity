@@ -1,2 +1,10 @@
 cmake-build-debug/*
-.idea
+CMakeFiles/**
+.idea/**
+.ninja_deps
+.ninja_log
+build.ninja
+game
+.cmake/**
+CMakeCache.txt
+cmake_install.cmake

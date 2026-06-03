@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.26)
 project(game)
-INCLUDE_DIRECTORIES(/usr/include/allegro5)
+INCLUDE_DIRECTORIES(/usr/include/allegro5 /usr/include/json)
 LINK_DIRECTORIES(  /usr/lib/x86_64-linux-gnu)
 
 set(CMAKE_CXX_STANDARD 17)
-
+#find_package(jsoncpp REQUIRED)
 add_executable(game main.cpp
         menu/BottomMenu.cpp
         menu/BottomMenu.h
@@ -14,6 +14,12 @@ add_executable(game main.cpp
         engine/GameContext.h
         menu/MenuBox.cpp
         menu/MenuBox.h
+        engine/Level.cpp
+        engine/Level.h
+        engine/Layer.cpp
+        engine/Layer.h
+        engine/io/LevelLoader.cpp
+        engine/io/LevelLoader.h
 )
 TARGET_LINK_LIBRARIES(game
         allegro_acodec
@@ -27,4 +33,5 @@ TARGET_LINK_LIBRARIES(game
         allegro_primitives
         allegro_ttf
         allegro_font
-        allegro)
+        allegro
+        jsoncpp)

@@ -5,8 +5,8 @@
 #include "Display.h"
 
 Display::Display() {
-    this->width = 1024;
-    this->height = 768;
+    this->width = 800;
+    this->height = 600;
     this->disp = al_create_display(width, height);
 }
 

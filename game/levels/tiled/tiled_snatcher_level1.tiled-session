@@ -1,0 +1,76 @@
+{
+    "activeFile": "test.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "#snatcher_tiles": {
+            "dynamicWrapping": true,
+            "scaleInEditor": 1
+        },
+        "sds_level1.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 5.5
+        },
+        "sds_level1_map.json": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 183.5,
+                "y": 41
+            }
+        },
+        "sds_level1_tileset.json": {
+            "dynamicWrapping": false,
+            "scaleInDock": 5.5,
+            "scaleInEditor": 1
+        },
+        "sds_level1_tilset.json": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "sds_level_1.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 32,
+                "y": 50.75
+            }
+        },
+        "test.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 106.5,
+                "y": 137.66666666666666
+            }
+        },
+        "test.tmx#sds_2": {
+            "scaleInDock": 16
+        },
+        "test.tmx#snatcher_tiles": {
+            "scaleInDock": 1
+        }
+    },
+    "last.exportedFilePath": "Z:/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled",
+    "last.imagePath": "Z:/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled",
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+        "test.tmx"
+    ],
+    "project": "tiled_snatcher_level1.tiled-project",
+    "recentFiles": [
+        "test.tmx",
+        "sds_level1_map.json",
+        "sds_level1_tileset.json",
+        "sds_level1.tsx",
+        "sds_level_1.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    }
+}

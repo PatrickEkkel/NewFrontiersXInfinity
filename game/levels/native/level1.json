@@ -1,0 +1,9 @@
+{
+  "name": "Level 1",
+  "isStudent": false,
+  "grid": ["reading", "music", "sports"],
+  "address": {
+    "street": "123 Main St",
+  },
+  "scores": null
+}
