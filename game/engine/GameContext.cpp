@@ -12,6 +12,7 @@
 #include <json/json.h>
 
 #include "Layer.h"
+#include "Tileset.h"
 #include "io/LevelLoader.h"
 
 GameContext::GameContext() {
@@ -39,7 +40,7 @@ void GameContext::startMainLoop() {
     bool redraw = true;
 
     auto * levelLoader = new LevelLoader();
-    levelLoader->loadLevel("/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled/test.tmj");
+    auto * level = levelLoader->loadLevel("/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled/test.tmj");
 
     std::ifstream infile("/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled/test.tmj");
     Json::Value data;
@@ -47,14 +48,7 @@ void GameContext::startMainLoop() {
     Json::CharReaderBuilder readerBuilder;
     Json::parseFromStream(readerBuilder, infile, &data, &errs);
     infile.close();
-    std::string name = data["height"].asString();
-    //data["layers"];
-
-    const Json::Value& layers = data["layers"];
-    for (const auto& layer : layers) {
-        auto * newLayer = new Layer(layer);
-        //std::cout << "Layer: " << newLayer->getName() << std::endl;
-    }
+    std::string name = "Jup";
 
     const char*  errorMessage = "Hello, World!";
     if (!infile) {

@@ -5,13 +5,14 @@
 #ifndef GAME_LEVELLOADER_H
 #define GAME_LEVELLOADER_H
 #include <string>
+#include "../Level.h"
 
 
 class LevelLoader {
 
     public:
     LevelLoader();
-    void loadLevel(std::string filename);
+    Level * loadLevel(std::string filename);
 };
 
 
