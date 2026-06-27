@@ -6,6 +6,7 @@
 #define GAME_TILESET_H
 #include <iostream>
 #include <ostream>
+#include <json/json.h>
 
 
 class Tileset {
@@ -20,6 +21,12 @@ class Tileset {
 
     std::string getImageName() {
         return jsonRef["image"].asString();
+    }
+
+    // TODO: rewrite this to store values in memory, this may be kind of slow ;-)
+
+    int getFirstGid() {
+        return jsonRef["firstgid"].asInt();
     }
 
     int getImageHeight() {

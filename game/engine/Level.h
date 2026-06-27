@@ -12,18 +12,30 @@ class Level {
 
 private:
     int height = 0;
-
-public:
     int getHeight();
     bool isInfinite();
     std::vector<Tileset> tilesets = {};
     std::vector<Layer> layers = {};
 
-    void addTileset(Tileset * tileset) {
-        tilesets.push_back(*tileset);
+public:
+
+
+    void addTileset(const Tileset * tileset) {
+        this->tilesets.push_back(*tileset);
     }
-    void addLayer(Layer * layer) {
-        tilesets.push_back(*layer);
+    void addLayer(const Layer *  layer) {
+        this->layers.push_back(*layer);
+    }
+    Tileset getTileSetByGID(int gid) {
+        // TODO: hier was ik gebleven, selecteer de tileset op basis van de huidige tile
+
+    }
+
+    std::vector<Tileset> getTilesets() {
+        return this->tilesets;
+    }
+    std::vector<Layer> getLayers() {
+        return this->layers;
     }
 
 };

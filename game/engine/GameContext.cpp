@@ -41,19 +41,7 @@ void GameContext::startMainLoop() {
 
     auto * levelLoader = new LevelLoader();
     auto * level = levelLoader->loadLevel("/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled/test.tmj");
-
-    std::ifstream infile("/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled/test.tmj");
-    Json::Value data;
-    std::string errs;
-    Json::CharReaderBuilder readerBuilder;
-    Json::parseFromStream(readerBuilder, infile, &data, &errs);
-    infile.close();
     std::string name = "Jup";
-
-    const char*  errorMessage = "Hello, World!";
-    if (!infile) {
-       errorMessage = "Can't Load level file";
-    }
     ALLEGRO_BITMAP *my_bitmap = al_load_bitmap("/home/ekkel/Git/NewFrontiersXInfinity/game_tilesets/sds_1.bmp");
     while(true)
     {
@@ -69,7 +57,20 @@ void GameContext::startMainLoop() {
         {
             al_clear_to_color(al_map_rgb(0, 0, 0));
             //al_draw_bitmap(my_bitmap, 0, 0, 0);
-            al_draw_text(font, al_map_rgb(102, 51, 0), 0, 0, 0, errorMessage);
+            if (levelLoader->hasError()) {
+                std::string errorMessage = levelLoader->getErrorMessage();
+                al_draw_text(font, al_map_rgb(102, 51, 0), 0, 0, 0, errorMessage.c_str());
+            }
+            for ( auto& layer : level->getLayers()) {
+                for (int x =0;x<layer.getWidth();x++) {
+                    for (int y =0;y<layer.getHeight();y++) {
+                           // std::cout <<  layer.getTile(x,y) << std::endl;
+                        Tile * tile = layer.getTile(x, y);
+                        // calculate tile offset and retrieve tileset.
+
+                    }
+                }
+            }
             al_draw_text(font, al_map_rgb(102, 51, 0), 0, 50, 0, name.c_str());
             //this->menu->draw();
             al_flip_display();

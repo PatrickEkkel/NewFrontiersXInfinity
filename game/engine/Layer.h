@@ -11,6 +11,8 @@
 #include <value.h>
 
 
+class Tile;
+
 class Layer {
 
     Json::Value jsonRef;
@@ -43,6 +45,7 @@ public:
             }
         }
         int* getData();
+        Tile * getTile(int x, int y);
         void setHeight(int height);
         void setName( std::string name);
         std::string getName();

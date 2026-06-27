@@ -6,6 +6,8 @@
 
 #include <cstring>
 
+#include "Tile.h"
+
 
 void Layer::setName(std::string name) {
     this->name = name;
@@ -31,6 +33,11 @@ void Layer::setY(int y) {
 
 int Layer::getX() const {
     return this->x;
+}
+
+Tile * Layer::getTile(int x, int y) {
+    Tile *tile = new Tile(x, y);
+    tile->setTileGid(this->mapData[x][y]);
 }
 
 int Layer::getY() {

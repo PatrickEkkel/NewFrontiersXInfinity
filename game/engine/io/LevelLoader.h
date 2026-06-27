@@ -9,10 +9,18 @@
 
 
 class LevelLoader {
-
-    public:
+private:
+std::string errorMessage = "";
+bool error = false;
+public:
     LevelLoader();
     Level * loadLevel(std::string filename);
+    std::string getErrorMessage() {
+        return errorMessage;
+    }
+    [[nodiscard]] bool hasError() const {
+        return this->error;
+    }
 };
 
 

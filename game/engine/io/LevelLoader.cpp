@@ -9,12 +9,17 @@
 #include <json/json.h>
 
 
+
 LevelLoader::LevelLoader() {
 }
 
 Level * LevelLoader::loadLevel(std::string filename) {
     Level * level = new Level();
     std::ifstream infile(filename);
+    if (!infile) {
+        errorMessage = "Can't Load level file";
+        this->error = true;
+    }
     Json::Value data;
     std::string errs;
     Json::CharReaderBuilder readerBuilder;
@@ -23,12 +28,11 @@ Level * LevelLoader::loadLevel(std::string filename) {
     const Json::Value& tilesets = data["tilesets"];
     const Json::Value& layers = data["layers"];
 
-    for (const auto& layer : layers) {
-        auto * newLayer = new Layer(layer);
+    for (const auto &layer: layers) {
+        level->addLayer(new Layer(layer));
     }
     for (const auto& tileset : tilesets) {
-        auto * newTileset = new Tileset(tileset);
-        vec.push_back(*newTileset);
+        level->addTileset(new Tileset(tileset));
     }
 
     infile.close();
