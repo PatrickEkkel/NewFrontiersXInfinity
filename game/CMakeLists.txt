@@ -14,10 +14,10 @@ add_executable(game main.cpp
         engine/GameContext.h
         menu/MenuBox.cpp
         menu/MenuBox.h
-        engine/Level.cpp
-        engine/Level.h
-        engine/Layer.cpp
-        engine/Layer.h
+        engine/io/objects/Level.cpp
+        engine/io/objects/Level.h
+        engine/io/objects/Layer.cpp
+        engine/io/objects/Layer.h
         engine/io/LevelLoader.cpp
         engine/io/LevelLoader.h
 )

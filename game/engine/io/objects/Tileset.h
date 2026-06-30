@@ -4,8 +4,6 @@
 
 #ifndef GAME_TILESET_H
 #define GAME_TILESET_H
-#include <iostream>
-#include <ostream>
 #include <json/json.h>
 
 

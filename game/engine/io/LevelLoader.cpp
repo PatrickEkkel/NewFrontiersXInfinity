@@ -3,9 +3,9 @@
 //
 #include <fstream>
 #include "LevelLoader.h"
-#include "../Layer.h"
-#include "../Tileset.h"
-#include "../Level.h"
+#include "objects/Layer.h"
+#include "objects/Tileset.h"
+#include "objects/Level.h"
 #include <json/json.h>
 
 

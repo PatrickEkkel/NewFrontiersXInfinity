@@ -26,7 +26,27 @@ public:
     void addLayer(const Layer *  layer) {
         this->layers.push_back(*layer);
     }
-    Tileset getTileSetByGID(int gid) {
+    Tileset * getTileSetByGID(int gid) {
+        int nextTilesetGid = 0;
+        Tileset * result = nullptr;
+        auto itr = this->tilesets.begin();
+        int currentPosition = 1;
+        for (Tileset& tileset : tilesets) {
+            // check if there is another tileset.
+            if (this->tilesets.size() > currentPosition ) {
+                nextTilesetGid = (itr + 1)->getFirstGid();
+                if (gid > currentPosition && gid < nextTilesetGid) {
+                    // select this tileset
+                    result = &tileset;
+                    break;
+                }
+            } else {
+                // there is only 1 tileset.
+                result = &tileset;
+                break;
+            }
+        }
+        return result;
         // TODO: hier was ik gebleven, selecteer de tileset op basis van de huidige tile
 
     }

@@ -31,15 +31,15 @@
 },
 {
   "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",
-  "command": "/usr/bin/c++ -I/usr/include/allegro5 -I/usr/include/json -g -fdiagnostics-color=always -o CMakeFiles/game.dir/engine/Level.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/engine/Level.cpp",
-  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/engine/Level.cpp",
-  "output": "/home/ekkel/Git/NewFrontiersXInfinity/game/CMakeFiles/game.dir/engine/Level.cpp.o"
+  "command": "/usr/bin/c++ -I/usr/include/allegro5 -I/usr/include/json -g -fdiagnostics-color=always -o CMakeFiles/game.dir/engine/io/objects/Level.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/engine/io/objects/Level.cpp",
+  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/engine/io/objects/Level.cpp",
+  "output": "/home/ekkel/Git/NewFrontiersXInfinity/game/CMakeFiles/game.dir/engine/io/objects/Level.cpp.o"
 },
 {
   "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",
-  "command": "/usr/bin/c++ -I/usr/include/allegro5 -I/usr/include/json -g -fdiagnostics-color=always -o CMakeFiles/game.dir/engine/Layer.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/engine/Layer.cpp",
-  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/engine/Layer.cpp",
-  "output": "/home/ekkel/Git/NewFrontiersXInfinity/game/CMakeFiles/game.dir/engine/Layer.cpp.o"
+  "command": "/usr/bin/c++ -I/usr/include/allegro5 -I/usr/include/json -g -fdiagnostics-color=always -o CMakeFiles/game.dir/engine/io/objects/Layer.cpp.o -c /home/ekkel/Git/NewFrontiersXInfinity/game/engine/io/objects/Layer.cpp",
+  "file": "/home/ekkel/Git/NewFrontiersXInfinity/game/engine/io/objects/Layer.cpp",
+  "output": "/home/ekkel/Git/NewFrontiersXInfinity/game/CMakeFiles/game.dir/engine/io/objects/Layer.cpp.o"
 },
 {
   "directory": "/home/ekkel/Git/NewFrontiersXInfinity/game",

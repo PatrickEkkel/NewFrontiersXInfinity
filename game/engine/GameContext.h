@@ -11,6 +11,7 @@
 #include <allegro_primitives.h>
 #include "../display/Display.h"
 #include "../menu/BottomMenu.h"
+#include "memory/MemoryManager.h"
 
 class GameContext {
 
@@ -18,6 +19,7 @@ private:
     ALLEGRO_TIMER* timer;
     ALLEGRO_EVENT_QUEUE* queue;
     Display* display;
+    MemoryManager* memory;
     BottomMenu* menu;
     ALLEGRO_FONT * font;
 

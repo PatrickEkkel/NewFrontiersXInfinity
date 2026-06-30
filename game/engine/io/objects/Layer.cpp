@@ -38,6 +38,7 @@ int Layer::getX() const {
 Tile * Layer::getTile(int x, int y) {
     Tile *tile = new Tile(x, y);
     tile->setTileGid(this->mapData[x][y]);
+    return tile;
 }
 
 int Layer::getY() {

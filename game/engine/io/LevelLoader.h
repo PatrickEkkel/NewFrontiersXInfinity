@@ -5,7 +5,7 @@
 #ifndef GAME_LEVELLOADER_H
 #define GAME_LEVELLOADER_H
 #include <string>
-#include "../Level.h"
+#include "objects/Level.h"
 
 
 class LevelLoader {

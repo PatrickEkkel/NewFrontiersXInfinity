@@ -11,9 +11,12 @@
 #include <iostream>
 #include <json/json.h>
 
-#include "Layer.h"
-#include "Tileset.h"
+#include "io/objects/Layer.h"
+#include "io/objects/Tile.h"
+#include "io/objects/Tileset.h"
 #include "io/LevelLoader.h"
+
+using namespace std;
 
 GameContext::GameContext() {
     al_init();
@@ -21,6 +24,7 @@ GameContext::GameContext() {
     al_install_keyboard();
     al_init_ttf_addon();
     al_init_primitives_addon();
+    this->memory = new MemoryManager();
     this->timer = al_create_timer(1.0 / 30.0);
     this->queue = al_create_event_queue();
     this->display = new Display();
@@ -42,6 +46,7 @@ void GameContext::startMainLoop() {
     auto * levelLoader = new LevelLoader();
     auto * level = levelLoader->loadLevel("/home/ekkel/Git/NewFrontiersXInfinity/game/levels/tiled/test.tmj");
     std::string name = "Jup";
+    string tilesetBasedir = "/home/ekkel/Git/NewFrontiersXInfinity/game_tilesets/";
     ALLEGRO_BITMAP *my_bitmap = al_load_bitmap("/home/ekkel/Git/NewFrontiersXInfinity/game_tilesets/sds_1.bmp");
     while(true)
     {
@@ -64,10 +69,18 @@ void GameContext::startMainLoop() {
             for ( auto& layer : level->getLayers()) {
                 for (int x =0;x<layer.getWidth();x++) {
                     for (int y =0;y<layer.getHeight();y++) {
-                           // std::cout <<  layer.getTile(x,y) << std::endl;
-                        Tile * tile = layer.getTile(x, y);
-                        // calculate tile offset and retrieve tileset.
+                        // std::cout <<  layer.getTile(x,y) << std::endl;
 
+                        Tile * tile = layer.getTile(x, y);
+                        tile->setTileset(level->getTileSetByGID(tile->getTileGid()));
+                        if (tile->getTileGid()) {
+                            string tilesetBitmapFilePath = tilesetBasedir + tile->getTileset()->getImageName();
+                            this->memory->loadBitmap(tilesetBitmapFilePath);
+                            //ALLEGRO_BITMAP *my_bitmap = al_load_bitmap("/home/ekkel/Git/NewFrontiersXInfinity/game_tilesets/sds_1.bmp");
+                        }
+                        // draw the tile on screen.. with al bitmap.. or something..
+
+                        // calculate tile offset and retrieve tileset.
                     }
                 }
             }
