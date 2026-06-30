@@ -40,7 +40,7 @@ GameContext::GameContext() {
 void GameContext::startMainLoop() {
     al_start_timer(timer);
     ALLEGRO_EVENT event;
-    ALLEGRO_FONT* font = al_load_ttf_font("fonts/slkscre.ttf",40,0);
+    ALLEGRO_FONT* font = al_load_ttf_font("/home/ekkel/Git/NewFrontiersXInfinity/game/fonts/slkscre.ttf",40,0);
     bool redraw = true;
 
     auto * levelLoader = new LevelLoader();
