@@ -69,14 +69,12 @@ void GameContext::startMainLoop() {
             for ( auto& layer : level->getLayers()) {
                 for (int x =0;x<layer.getWidth();x++) {
                     for (int y =0;y<layer.getHeight();y++) {
-                        // std::cout <<  layer.getTile(x,y) << std::endl;
-
                         Tile * tile = layer.getTile(x, y);
                         tile->setTileset(level->getTileSetByGID(tile->getTileGid()));
                         if (tile->getTileGid()) {
                             string tilesetBitmapFilePath = tilesetBasedir + tile->getTileset()->getImageName();
-                            this->memory->loadBitmap(tilesetBitmapFilePath);
-                            //ALLEGRO_BITMAP *my_bitmap = al_load_bitmap("/home/ekkel/Git/NewFrontiersXInfinity/game_tilesets/sds_1.bmp");
+                            NFX_Bitmap * tileset = this->memory->loadBitmap(tilesetBitmapFilePath);
+                            al_draw_bitmap(bitmap, 100, 150, 0);
                         }
                         // draw the tile on screen.. with al bitmap.. or something..
 

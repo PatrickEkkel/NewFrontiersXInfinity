@@ -20,6 +20,8 @@ add_executable(game main.cpp
         engine/io/objects/Layer.h
         engine/io/LevelLoader.cpp
         engine/io/LevelLoader.h
+        engine/screen/Window.cpp
+        engine/screen/Window.h
 )
 TARGET_LINK_LIBRARIES(game
         allegro_acodec

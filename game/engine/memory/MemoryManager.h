@@ -15,19 +15,21 @@ class MemoryManager {
     std::vector<NFX_Bitmap*> bitmaps = {};
     BitmapLoader * bitmapLoader;
     map<string, int> bitmapIndexMap;
+    int lastIndex = 0;
     public:
     MemoryManager() {
         this->bitmapLoader = new BitmapLoader();
 
     }
     NFX_Bitmap * loadBitmap(const string &fileName) {
-        // TODO: this is bs of course, you can't load the bitmap and then look up ;-) its the other way around you dummy.
-        NFX_Bitmap * result = this->bitmapLoader->loadBitmap(fileName);
-        if (this->bitmapIndexMap.find(result->getBitmapId()) != this->bitmapIndexMap.end()) {
-            return this->bitmaps[this->bitmapIndexMap[result->getBitmapId()]];
-        } else {
-            this->bitmaps.push_back(result);
+        filesystem::path bitmapId(fileName);
+        if (this->bitmapIndexMap.find(bitmapId) != this->bitmapIndexMap.end()) {
+            return this->bitmaps[this->bitmapIndexMap[bitmapId]];
         }
+        NFX_Bitmap * result = this->bitmapLoader->loadBitmap(fileName);
+        this->bitmapIndexMap[bitmapId] = this->lastIndex;
+        this->bitmaps.push_back(result);
+        this->lastIndex+= 1;
         return result;
 
     }
